@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 
 import PlaceInput from "./src/components/PlaceInput/PlaceInput";
 import PlaceList from "./src/components/PlaceList/PlaceList";
-import placeImage from "./src/assets/Munich.jpg";
+//import placeImage from "./src/assets/Munich.jpg";
 
 export default class App extends Component {
   state = {
@@ -15,7 +15,10 @@ export default class App extends Component {
         places: prevState.places.concat({
           key: Math.random(),
           name: placeName,
-          image: placeImage
+          image: {
+            uri:
+              "https://cdn.muenchen-p.de/.imaging/stk/responsive/galleryLarge/dms/shutterstock/neues-rathaus-marienplatz/document/neues-rathaus-marienplatz.jpg"
+          }
         })
       };
     });
