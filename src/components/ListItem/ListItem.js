@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 const ListItem = props => (
   <TouchableOpacity onPress={props.onItemPressed}>
     <View style={styles.listItem}>
-      <Image source={props.image} style={styles.image} />
+      <Image source={props.image} resizeMode="contain" style={styles.image} />
       <Text>{props.placeName}</Text>
     </View>
   </TouchableOpacity>
