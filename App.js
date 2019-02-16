@@ -29,13 +29,15 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-        style={styles.textInput}
-        placeholder= "An Awesome place"
-        value={this.state.placeName}
-        onChangeText={this.placeNameChangeHandler}
-         />
-         <Button title="Add"/>
+        <View style={styles.inputContainer}>
+          <TextInput
+          style={styles.textInput}
+          placeholder= "An Awesome place"
+          value={this.state.placeName}
+          onChangeText={this.placeNameChangeHandler}
+            />
+            <Button title="Add" style={styles.button}/>
+          </View>
       </View>
     );
   }
@@ -47,19 +49,17 @@ const styles = StyleSheet.create({
     padding: 50,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   textInput :{
-    width: 300,
+    width: "70%"
+  },
+  button: {
+    width: "30%"
   }
 });
