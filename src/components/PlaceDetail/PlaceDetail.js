@@ -1,11 +1,11 @@
-import React from 'react';
-import { Modal, View, Image, Text, Button } from 'react-native';
+import React from "react";
+import { Modal, View, Image, Text, Button } from "react-native";
 
 const PlaceDetail = props => (
   <Modal>
     <View>
-      <Image/>
-      <Text></Text>
+      <Image />
+      <Text />
       <View>
         <Button />
         <Button />
@@ -14,4 +14,4 @@ const PlaceDetail = props => (
   </Modal>
 );
 
-export defualt PLaceDetail;
+export default PLaceDetail;
