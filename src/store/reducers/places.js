@@ -5,12 +5,12 @@ import {
   DESELECT_PLACE
 } from "../actions/actionTypes";
 
-const initialSatate = {
+const initialState = {
   places: [],
   selectedPlace: null
 };
 
-const reducer = (state = initialSatate, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_PLACE:
       return {
