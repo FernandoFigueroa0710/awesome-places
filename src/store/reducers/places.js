@@ -15,7 +15,7 @@ const reducer = (state = initialSatate, action) => {
     case ADD_PLACE:
       return {
         ...state,
-        places: prevState.places.concat({
+        places: state.places.concat({
           key: Math.random(),
           name: action.placeName,
           image: {
