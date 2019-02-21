@@ -5,7 +5,7 @@ import {
   DESELECT_PLACE
 } from "./actionTypes";
 
-export const addPLace = placeName => {
+export const addPlace = placeName => {
   return {
     type: ADD_PLACE,
     placeName: placeName
